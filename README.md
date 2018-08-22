@@ -6,8 +6,8 @@ To run this locally, you need to make an account at https://imgflip.com/.
 
 run: 
 
-1. git clone git@github.com:wlee367/Redux-Meme-Generator.git
-2. cd Redux-Meme-Generator
+1. `git clone git@github.com:wlee367/Redux-Meme-Generator.git`
+2. `cd Redux-Meme-Generator`
 3. vim src/actions/secrets.js
 4. In secrets.js file, put your username and password like so: 
 
