@@ -28,3 +28,9 @@ export { username, password };
 5. `npm install`
 6. `npm start`
 7. visit http://localhost:3000
+
+## Future plans:
+
+1. Display resulting image in a new window.
+2. Make it mobile friendly
+3. Webapp Redesign / styling.
