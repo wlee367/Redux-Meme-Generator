@@ -17,7 +17,7 @@
   <h3 align="center">Meme Generator</h3>
 
   <p align="center">
-    A web application that leverages the ImgFlip API to generate some memes. For fun. Now live at <a href="https://admiring-curie-b7aa22.netlify.app/">here</a>
+    A web application that leverages the ImgFlip API to generate some memes. For fun. Now live <a target="_blank" rel="noreferrer" href="https://admiring-curie-b7aa22.netlify.app/">here</a>
   </p>
 </p>
 
