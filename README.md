@@ -17,7 +17,7 @@
   <h3 align="center">Meme Generator</h3>
 
   <p align="center">
-    A react application that leverages the ImgFlip API to generate some memes. For fun.  
+    A react application that leverages the ImgFlip API to generate some memes. For fun. Now live [here](https://admiring-curie-b7aa22.netlify.app/)
   </p>
 </p>
 
