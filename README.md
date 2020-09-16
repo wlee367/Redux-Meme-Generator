@@ -144,5 +144,5 @@ Project Link: [https://github.com/wlee367/Redux-Meme-Generator](https://github.c
 [license-url]: https://github.com/wlee367/TaskManager/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wlee367
-[product-screenshot]: images/meme-demo.gif
+[product-screenshot]: images/meme-generated.png
 [main-screen]: images/MainScreen.png
