@@ -7,6 +7,7 @@ This React/Redux application uses the ImgFlip API, Redux, Fetch API to create a 
 ![image](./images/Main.png)
 
 ![image](./images/Examples.png)
+
 ![image](./images/Examples2.png)
 
 To run this locally, you need to make an account at https://imgflip.com/.
