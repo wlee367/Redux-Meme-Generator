@@ -10,52 +10,57 @@ function receiveMemes(json) {
 
     return {
         type: RECEIVE_MEMES,
-        memes
-    }
+        memes,
+    };
 }
 
 //saga
 function fetchMemeJson() {
-    return fetch('https://api.imgflip.com/get_memes')
-        .then(response => response.json());
+    return fetch('https://api.imgflip.com/get_memes').then((response) =>
+        response.json()
+    );
 }
 
 function postMemeJson(params) {
-    params["username"] = username;
-    params["password"] = password;
-  
-    const bodyParams = Object.keys(params).map(key => {
-      return encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
-    }).join('&');
-  
+    params['username'] = username;
+    params['password'] = password;
+
+    const bodyParams = Object.keys(params)
+        .map((key) => {
+            return (
+                encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
+            );
+        })
+        .join('&');
+
     console.log('bodyParams', bodyParams);
-  
+
     return fetch('https://api.imgflip.com/caption_image', {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: bodyParams
-    }).then(response => response.json());
-  }
-  
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: bodyParams,
+    }).then((response) => response.json());
+}
+
 export function createMeme(new_meme_object) {
-    return function(dispatch) {
-        return postMemeJson(new_meme_object)
-        .then(new_meme => dispatch(newMeme(new_meme)))
-    }
+    return function (dispatch) {
+        return postMemeJson(new_meme_object).then((new_meme) =>
+            dispatch(newMeme(new_meme))
+        );
+    };
 }
 
 export function fetchMemes() {
-    return function(dispatch) {
-        return fetchMemeJson()
-            .then(json => dispatch(receiveMemes(json)))
-    }
+    return function (dispatch) {
+        return fetchMemeJson().then((json) => dispatch(receiveMemes(json)));
+    };
 }
 
 export function newMeme(meme) {
     return {
         type: NEW_MEME,
-        meme
-    }
+        meme,
+    };
 }
